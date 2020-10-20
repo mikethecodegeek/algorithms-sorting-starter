@@ -8,6 +8,16 @@ function swap(array, idx1, idx2) {
 
 function bubbleSort(array) {
   // your code here
+  let swapCheck =true; 
+  while(swapCheck) {
+    swapCheck=false;
+    for (let a=0; a< array.length-1; a++) {
+     if (array[a] > array[a+1]) {
+       swap(array,a,a+1);
+       swapCheck=true;
+     }
+   }
+  }
 }
 
 module.exports = {
